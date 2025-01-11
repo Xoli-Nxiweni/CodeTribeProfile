@@ -1,0 +1,116 @@
+/* styles/TableOfContents.css */
+.tableOfContentsModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.tableOfContentsModal {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 90%;
+  max-width: 600px;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.toc-header {
+  background-color: #00396e;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #005b7f;
+}
+
+.toc-container {
+  padding: 1rem;
+}
+
+.toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toc-item {
+  margin: 0.5rem 0;
+}
+
+.toc-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  color: #00396e;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toc-link:hover {
+  background-color: #e0f7fa;
+  color: #005b7f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.toc-icon {
+  width: 20px;
+  height: 20px;
+  color: #666;
+  flex-shrink: 0;
+}
+
+.chevron-icon {
+  width: 20px;
+  height: 20px;
+  color: #999;
+  transition: color 0.3s ease;
+}
+
+.toc-link:hover .chevron-icon {
+  color: #005b7f;
+}
+
+.close-toc {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.close-toc:hover {
+  color: #ff6b6b;
+}

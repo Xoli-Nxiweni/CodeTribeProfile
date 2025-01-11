@@ -1,0 +1,73 @@
+/* Assessments.css */
+
+.assessments-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .assessments-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .assessments-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .assessments-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .assessments-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .assessment-item {
+    background: #f0f0f0;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+    text-align: left;
+  }
+  
+  .assessment-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .assessment-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .assessment-score,
+  .assessment-date {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.3rem 0;
+  }
+  
+  .assessment-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #4caf50;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .assessment-link:hover {
+    text-decoration: underline;
+  }
+  
