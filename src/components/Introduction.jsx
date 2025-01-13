@@ -1,7 +1,7 @@
 // components/Introduction.js
 import React from 'react';
 import './styles/Introduction.css'
-import image from '../assets/000.png'
+// import image from '../assets/000.png'
 
 const Introduction = () => {
   const personalInfo = {
@@ -10,7 +10,7 @@ const Introduction = () => {
     program: "CodeTribe Academy",
     introduction:
       "A passionate developer who joined CodeTribe Academy to enhance my skills in web and mobile development. Prior to CodeTribe, I worked on several personal projects and completed online courses in web development. My goal is to become a full-stack developer and contribute to meaningful projects that make a difference.",
-    avatar: image,
+    avatar: '',
   };
 
   return (
