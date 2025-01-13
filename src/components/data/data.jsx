@@ -46,72 +46,83 @@ export const projects = {
       },
     },
     {
-      title: "To-Do List App",
-      description: "A simple and effective to-do list application.",
-      techStack: ["React", "Redux"],
-      features: ["Add tasks", "Mark tasks as complete", "Delete tasks"],
-      challenges: "Improving the repo structure for better clarity.",
-      links: { github: "https://github.com/project3", demo: "https://demo.com/project3" },
+      title: "Node Server",
+      description: "A robust Node.js server implementation with RESTful endpoints.",
+      techStack: ["Node.js", "Express", "MongoDB"],
+      features: ["RESTful API", "Authentication", "Error handling"],
+      challenges: "Implementing secure authentication and proper error handling",
+      links: { github: "https://github.com/node-server", demo: "https://demo.com/node-server" },
       image: "https://via.placeholder.com/400x250",
       feedback: {
-        score: "83.65%",
-        notes: "Needs to work on repo structure. Managed to execute the functionality well.",
+        score: "93.5%",
+        notes: "Need to add comments, good job",
       },
     },
     {
-      title: "Weather App",
-      description: "An app providing weather updates and news.",
-      techStack: ["React", "API Integration"],
-      features: ["Search weather by city", "Display current weather", "News updates"],
-      challenges: "Improving UI and search functionality.",
-      links: { github: "https://github.com/project4", demo: "https://demo.com/project4" },
+      title: "Quiz Application",
+      description: "Interactive quiz application with multiple categories",
+      techStack: ["React", "Node.js", "MongoDB"],
+      features: ["Multiple quiz categories", "Score tracking", "Timer functionality"],
+      challenges: "Implementing timer and score calculation logic",
+      links: { github: "https://github.com/quiz-app", demo: "https://demo.com/quiz" },
       image: "https://via.placeholder.com/400x250",
       feedback: {
-        score: "87%",
-        notes: "Strong functionality and essential features covered well. Needs work on UI and search functionality.",
+        score: "97%",
+        notes: "Good job",
       },
     },
     {
-      title: "Shopping-List App",
-      description: "An app to create and manage shopping lists.",
-      techStack: ["React", "Firebase"],
-      features: ["Add items", "Mark items as bought", "Delete items"],
-      challenges: "Enhancing UI components for better user experience.",
-      links: { github: "https://github.com/Xoli-Nxiweni/Shopping-List", demo: "https://demo.com/project5" },
+      title: "Shopping List API",
+      description: "RESTful API for managing shopping lists",
+      techStack: ["Node.js", "Express", "MongoDB"],
+      features: ["CRUD operations", "User authentication", "List sharing"],
+      challenges: "Implementing proper API architecture",
+      links: { github: "https://github.com/shopping-list-api", demo: "https://demo.com/shopping-api" },
       image: "https://via.placeholder.com/400x250",
       feedback: {
-        score: "73.5%",
-        notes: "Great work, needs to enhance a few components on the UI.",
+        score: "93.4%",
+        notes: "Get request doesn't get by id",
       },
     },
     {
-      title: "Portfolio Website",
-      description: "My personal portfolio website showcasing my projects and skills.",
-      techStack: ["React", "CSS", "Firebase"],
-      features: ["Showcase projects", "Responsive design", "Contact form"],
-      challenges: "Ensuring mobile responsiveness and smooth navigation.",
-      links: { github: "https://github.com/project6", demo: "https://demo.com/project6" },
+      title: "Book Directory App",
+      description: "Application for managing and organizing books",
+      techStack: ["React", "Node.js", "MongoDB"],
+      features: ["Book cataloging", "Search functionality", "Categories"],
+      challenges: "Implementing search and filter functionality",
+      links: { github: "https://github.com/book-directory", demo: "https://demo.com/books" },
       image: "https://via.placeholder.com/400x250",
       feedback: {
-        score: "88.9%",
-        notes: "Clean design and easy navigation. Needs a few adjustments in mobile view for better experience.",
+        score: "87.65%",
+        notes: "Comments are missing, need to work on commit messages as well",
       },
     },
-      /*
-    node projects:
-    node server: 93.5%: comment: need to add comments, good job
-    quiz: 97%: comment: good job
-    shoppingList api : 93.4%: comment: get request doenst get by id
-    book directory app: 87.65% : comment: comments are missing , need to work on commit messages as well
-    card guessing game: 91.2% :comment: the game should have a popup to prompt the user to replay or end game and then work on commit messages
-    employee management system: 00% comment:
-    node hosting: 97%: comment: good work
-
-    mongoDB:
-    
-
-
-   */
+    {
+      title: "Card Guessing Game",
+      description: "Interactive card guessing game with multiple difficulty levels",
+      techStack: ["React", "JavaScript"],
+      features: ["Multiple difficulty levels", "Score tracking", "Animations"],
+      challenges: "Implementing game logic and animations",
+      links: { github: "https://github.com/card-game", demo: "https://demo.com/card-game" },
+      image: "https://via.placeholder.com/400x250",
+      feedback: {
+        score: "91.2%",
+        notes: "The game should have a popup to prompt the user to replay or end game and then work on commit messages",
+      },
+    },
+    {
+      title: "Node Hosting Project",
+      description: "Project demonstrating Node.js deployment and hosting setup",
+      techStack: ["Node.js", "Express", "AWS/Heroku"],
+      features: ["Automated deployment", "Environment configuration", "Monitoring"],
+      challenges: "Setting up proper deployment pipelines",
+      links: { github: "https://github.com/node-hosting", demo: "https://demo.com/node-hosting" },
+      image: "https://via.placeholder.com/400x250",
+      feedback: {
+        score: "97%",
+        notes: "Good work",
+      },
+    },
   ],
   group: [],
 };
@@ -162,7 +173,6 @@ export const goals = {
     "Lead a development team",
   ],
 };
-
 
 // Combine all data
 export const portfolioData = {
