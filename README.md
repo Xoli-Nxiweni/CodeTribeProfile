@@ -89,5 +89,5 @@ For any inquiries or feedback, please reach out via email at [xolinxiweni@gmail.
 
 ---
 
-Thank you for exploring the Portfolio of Evidence/Projects Template! We hope it helps you showcase your achievements effectively.
+Thank you for exploring my Portfolio of Evidence!
 
