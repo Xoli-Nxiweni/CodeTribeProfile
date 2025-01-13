@@ -28,7 +28,7 @@ export const projects = {
       links: { github: "https://github.com/project1", demo: "https://demo.com/project1" },
       image: "https://via.placeholder.com/400x250",
       feedback: {
-        score: "91.4%",
+        score: "82.9%",
         notes: "Well executed. Maintained a clean and functional UI with good state management.",
       },
     },
@@ -41,7 +41,7 @@ export const projects = {
       links: { github: "https://github.com/project2", demo: "https://demo.com/project2" },
       image: "https://via.placeholder.com/400x250",
       feedback: {
-        score: "87.65%",
+        score: "86%",
         notes: "Needs to work on the README. Good work on functionality and UI.",
       },
     },
@@ -67,7 +67,7 @@ export const projects = {
       links: { github: "https://github.com/project4", demo: "https://demo.com/project4" },
       image: "https://via.placeholder.com/400x250",
       feedback: {
-        score: "87.75%",
+        score: "87%",
         notes: "Strong functionality and essential features covered well. Needs work on UI and search functionality.",
       },
     },
@@ -77,10 +77,10 @@ export const projects = {
       techStack: ["React", "Firebase"],
       features: ["Add items", "Mark items as bought", "Delete items"],
       challenges: "Enhancing UI components for better user experience.",
-      links: { github: "https://github.com/project5", demo: "https://demo.com/project5" },
+      links: { github: "https://github.com/Xoli-Nxiweni/Shopping-List", demo: "https://demo.com/project5" },
       image: "https://via.placeholder.com/400x250",
       feedback: {
-        score: "80.5%",
+        score: "73.5%",
         notes: "Great work, needs to enhance a few components on the UI.",
       },
     },
@@ -97,6 +97,21 @@ export const projects = {
         notes: "Clean design and easy navigation. Needs a few adjustments in mobile view for better experience.",
       },
     },
+      /*
+    node projects:
+    node server: 93.5%: comment: need to add comments, good job
+    quiz: 97%: comment: good job
+    shoppingList api : 93.4%: comment: get request doenst get by id
+    book directory app: 87.65% : comment: comments are missing , need to work on commit messages as well
+    card guessing game: 91.2% :comment: the game should have a popup to prompt the user to replay or end game and then work on commit messages
+    employee management system: 00% comment:
+    node hosting: 97%: comment: good work
+
+    mongoDB:
+    
+
+
+   */
   ],
   group: [],
 };
@@ -123,7 +138,7 @@ export const assessments = [
     name: "Hotel App",
     gitLink: "https://github.com/hotel-app",
     dateCompleted: "2024-12-25",
-    score: "82.5%",
+    score: "76.5%",
     notes: "Toggling between favorites, haven't implemented the email on the CMS. The ratings are not working fine.",
   },
 ];
@@ -147,6 +162,7 @@ export const goals = {
     "Lead a development team",
   ],
 };
+
 
 // Combine all data
 export const portfolioData = {
