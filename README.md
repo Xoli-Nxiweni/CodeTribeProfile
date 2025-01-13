@@ -74,7 +74,7 @@ CodeTribeProfile/
 - **Social Links:** Click on the icons to visit the respective profiles.
 
 ## Customization
-- Update `data/data.js` to change personal information and project details.
+- Update `data/data.js` to change personal information and project details or now, backend and database integration will be implemented all together
 - Modify CSS files in the `styles/` directory to customize the design.
 
 ## Contributing
@@ -83,9 +83,6 @@ CodeTribeProfile/
 3. Commit your changes.
 4. Push your branch to your forked repository.
 5. Create a pull request.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
 ## Contact
 For any inquiries or feedback, please reach out via email at [xolinxiweni@gmail.com](mailto:xolinxiweni@gmail.com) or through the provided social links.
