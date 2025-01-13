@@ -196,6 +196,9 @@
       z-index: 2;
       bottom: 0;
     }
+    .navbar.sticky .nav-links{
+      background-color: #f5f5f5;
+    }
 
     .nav-links.open {
       right: 0;
