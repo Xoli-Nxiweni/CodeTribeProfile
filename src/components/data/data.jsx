@@ -11,7 +11,7 @@ export const personalInfo = {
   introduction:
     "A passionate developer who joined CodeTribe Academy to enhance my skills in web and mobile development. Prior to CodeTribe, I worked on several personal projects and completed online courses in web development. My goal is to become a full-stack developer and contribute to meaningful projects that make a difference.",
   avatar: image,
-  resumeLink: "https://example.com/resume.pdf",
+  resumeLink: "/CurriculumVitae.pdf",
   linkedInProfile: "https://www.linkedin.com/in/xolinxiweni/",
   githubProfile: "https://github.com/Xoli-Nxiweni",
   whatsappLink: "https://wa.me/27617514638",

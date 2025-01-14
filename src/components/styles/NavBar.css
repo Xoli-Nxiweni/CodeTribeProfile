@@ -67,6 +67,7 @@
     color: #ffffff;
     font-weight: bold;
     border: none;
+    font-size: 1.25em;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     /* margin: 0.5rem 0; */

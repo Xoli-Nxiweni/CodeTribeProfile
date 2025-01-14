@@ -1,54 +1,47 @@
 // components/Resume.js
 import React from "react";
 import "./styles/Resume.css";
-import resume from "/CurriculumVitae.pdf";
 
 const Resume = ({ data }) => {
-  const resumeLink = data?.resumeLink || resume;
+  const resumeLink = data?.resumeLink || process.env.PUBLIC_URL + "/CurriculumVitae.pdf";
 
   return (
     <section id="resume">
       <div className="resume-container">
-        <h2 className="resume-title">Resume</h2>
+        <h2 className="resume-title">My Resume</h2>
 
-        {/* View Resume Button */}
-        <a
-          href={resumeLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="View resume in a new tab"
-          className="view-resume-button"
-        >
-          View Resume
-        </a>
+        <div className="button-group">
+          <a
+            href={resumeLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View resume in a new tab"
+            className="btn view-btn"
+          >
+            📄 View Resume
+          </a>
 
-        {/* Download Resume Button */}
-        <a
-          href={resumeLink}
-          download
-          aria-label="Download the resume"
-          className="download-button"
-        >
-          Download Resume
-        </a>
+          <a
+            href={resumeLink}
+            download="Xolile_Nxiweni_Resume.pdf"
+            aria-label="Download the resume"
+            className="btn download-btn"
+          >
+            📥 Download Resume
+          </a>
+        </div>
 
-        {/* Resume Preview with Error Fallback */}
-        {resumeLink ? (
-          <iframe
-            src={resumeLink}
-            className="resume-iframe"
-            title="Resume Preview"
-            aria-label="Resume preview iframe"
-            onError={(e) => {
-              e.target.style.display = "none";
-              alert("Failed to load resume. Please use the download button.");
-            }}
-          />
-        ) : (
-          <p className="error-message">
-            The resume could not be loaded. Please download it instead.
-          </p>
-        )}
+        <div className="resume-preview">
+        <object
+  data={`${resumeLink}#toolbar=0&navpanes=0&scrollbar=1`}
+  type="application/pdf"
+  className="resume-iframe"
+  aria-label="Resume preview"
+>
+  <p>Your browser does not support PDFs. <a href={resumeLink}>Download the PDF</a> instead.</p>
+</object>
+
+        </div>
       </div>
     </section>
   );
