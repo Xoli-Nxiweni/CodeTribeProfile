@@ -1,167 +1,183 @@
-/* Projects.css */
+/* Section Styling */
 .projects-section {
-  padding: 40px 8%;
-  background-color: #f8f9fa;
-  min-height: 100vh;
+  background-color: #f5f5f5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Container */
 .projects-container {
-  margin: 0 auto;
-  background: #ffffff;
-  padding: 2.5rem;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 10px 10%;
+  width: 100%;
+  text-align: center;
+  height: auto;
+  color: #124;
+  /* padding: 2rem; */
+  border-radius: 15px;
+  /* box-shadow: 0 8px 20px rgba(17, 34, 68, 0.1); */
 }
 
+/* Title */
 .projects-title {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 2rem;
-  text-align: center;
-  color: #1a1a1a;
-  position: relative;
+  color: #124;
 }
 
 .projects-title::after {
   content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
+  display: block;
   width: 60px;
   height: 3px;
-  background: #123;
+  background: #124;
+  margin: 10px auto 0;
   border-radius: 2px;
 }
 
+/* Tabs */
 .tabs {
   display: flex;
   justify-content: center;
+  gap: 1.5rem;
   margin-bottom: 2.5rem;
-  gap: 1rem;
 }
 
 .tab-button {
   padding: 0.75rem 1.5rem;
-  background: #123;
+  background: #124;
   border: none;
   border-radius: 8px;
   color: #fff;
   cursor: pointer;
-  transition: all 0.3s ease;
   font-weight: 600;
   font-size: 1rem;
+  transition: all 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.tab-button.active {
-  background-color: #124;
+.tab-button.active,
+.tab-button:hover {
+  background-color: #1d6b99;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.tab-button:hover {
-  background-color: #124;
-  transform: translateY(-2px);
-}
-
+/* Projects List */
 .projects-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-  padding: 1rem 0;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
+/* Project Item */
 .project-item {
-  background: #ffffff;
-  padding: 1.5rem;
-  border-radius: 12px;
+  background: #fff;
+  padding: .3rem;
+  border-radius: 15px;
+  border: 1px solid #eee;
   transition: all 0.3s ease;
   cursor: pointer;
-  border: 1px solid #eee;
-  height: 100%;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 8px 20px rgba(17, 34, 68, 0.1);
 }
 
 .project-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(17, 34, 68, 0.15);
+}
+
+.project-image-container {
+  position: relative;
+  height: 200px;
 }
 
 .project-image {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 1rem;
 }
 
+/* Project Title */
 .project-title {
   font-size: 1.4rem;
   font-weight: 700;
-  margin: 1rem 0;
-  color: #1a1a1a;
+  color: #124;
+  margin-top: 1rem;
 }
 
+/* Project Description */
 .project-description {
   font-size: 1rem;
   color: #4a4a4a;
   line-height: 1.6;
-  flex-grow: 1;
+  margin-top: 0.5rem;
 }
 
+/* Modal Styling */
 .project-dialog {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  right: 0;
   bottom: 0;
+  right: 0;
+  /* width: 100%; */
+  /* height: 100vh; */
   background: rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1050;
-  padding: 20px;
-  height: 100vh;
+  /* padding: 20px; */
   animation: fadeIn 0.3s ease;
+  overflow: hidden;
 }
 
+/* Modal Content */
 .dialog-content {
-  background: white;
-  padding: 2.5rem;
-  border-radius: 16px;
-  max-width: 700px;
-  width: 100%;
+  position: absolute;
+  top: 5%;
+  bottom: 0;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  /* max-width: 700px; */
+  width: 80%;
   max-height: 90vh;
   overflow-y: auto;
-  position: relative;
   animation: slideUp 0.3s ease;
+  box-shadow: 0 8px 20px rgba(17, 34, 68, 0.1);
 }
 
+/* Close Button */
 .close-button {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
   border: none;
   background: none;
   cursor: pointer;
   color: #666;
-  transition: color 0.3s ease;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 0.3s ease;
 }
 
 .close-button:hover {
-  color: #123;
+  color: #1d6b99;
   background: #f5f5f5;
 }
 
+/* Modal Image */
 .dialog-image {
   width: 100%;
   height: 300px;
@@ -170,45 +186,39 @@
   margin-bottom: 1.5rem;
 }
 
+/* Tech Stack, Features, etc. */
 .tech-stack, .project-features, .challenges, .feedback {
   text-align: left;
   margin: 1.5rem 0;
   padding: 1rem;
-  background: #f8f9fa;
+  background: #f9f9f9;
   border-radius: 8px;
 }
 
 .tech-stack h4, .project-features h4, .challenges h4, .feedback h4 {
-  color: #123;
-  margin-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: 600;
+  color: #124;
 }
 
 .tech-stack ul, .project-features ul {
   list-style: none;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
 }
 
-.tech-stack li {
-  background: #123;
-  color: white;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-}
-
-.project-features li {
-  background: #f0f0f0;
-  padding: 0.6rem 1rem;
-  border-radius: 8px;
+.tech-stack li, .project-features li {
+  font-size: 1rem;
+  color: #4a4a4a;
   margin-bottom: 0.5rem;
-  font-size: 0.95rem;
 }
 
+.challenges p, .feedback p {
+  font-size: 1rem;
+  color: #4a4a4a;
+  margin-bottom: 0.5rem;
+}
+
+/* Buttons in Modal */
 .dialog-buttons {
   display: flex;
   gap: 1rem;
@@ -218,32 +228,26 @@
 
 .dialog-button {
   padding: 0.8rem 1.5rem;
-  background-color: #123;
+  background-color: #124;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: all 0.3s ease;
   font-weight: 600;
-  min-width: 120px;
+  transition: all 0.3s ease;
 }
 
 .dialog-button:hover {
-  background-color: #124;
+  background-color: #1d6b99;
   transform: translateY(-2px);
 }
 
-.feedback {
-  border-top: 1px solid #eee;
-  margin-top: 2rem;
-  padding-top: 1rem;
+/* Prevent Body Scroll When Modal is Open */
+body.modal-open {
+  overflow: hidden;
 }
 
-.feedback p {
-  margin: 0.5rem 0;
-  font-size: 0.95rem;
-}
-
+/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -260,35 +264,26 @@
   }
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   .projects-section {
     padding: 20px 5%;
   }
-  
+
   .projects-container {
-    padding: 1.5rem;
+    padding: 2rem;
   }
-  
-  .dialog-content {
-    padding: 1.5rem;
-    margin: 10px;
-  }
-  
+
   .project-title {
     font-size: 1.2rem;
   }
-  
+
   .dialog-image {
-    height: 200px;
+    height: 250px;
   }
-  
+
   .tabs {
     flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  .tab-button {
-    width: 100%;
   }
 }
 
@@ -296,12 +291,8 @@
   .projects-list {
     grid-template-columns: 1fr;
   }
-  
+
   .dialog-buttons {
     flex-direction: column;
-  }
-  
-  .dialog-button {
-    width: 100%;
   }
 }

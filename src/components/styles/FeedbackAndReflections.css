@@ -1,48 +1,77 @@
+/* Section Styling */
 .feedback-section {
-    padding: 2rem 1rem;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  .feedback-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1.5rem;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .feedback-title {
-    font-size: 1.75rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    color: #00396E;
-    text-align: center;
-  }
-  
-  .feedback-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  
-  .feedback-block {
-    background: #f5f5f5;
-    padding: 1rem;
-    border-radius: 8px;
-  }
-  
-  .feedback-heading {
-    font-size: 1.25rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    color: #00396E;
-  }
-  
-  .feedback-text {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.5;
-  }
-  
+  background: #f5f5f5;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container */
+.feedback-container {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  color: #124;
+}
+
+/* Title */
+.feedback-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #124;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.feedback-subtitle {
+  font-size: 1.2rem;
+  color: #123;
+  margin-bottom: 40px;
+}
+
+/* Card Grid */
+.feedback-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Individual Card */
+.feedback-card {
+  background: #f5f5f5;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px #11224433;
+  transition: transform 0.3s ease-in-out;
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.feedback-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px #1122444d;
+}
+
+/* Icon Styling */
+.feedback-icon {
+  font-size: 3rem;
+  color: #124;
+  margin-bottom: 15px;
+}
+
+/* Heading */
+.feedback-heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Text */
+.feedback-text {
+  font-size: 1rem;
+  color: #124;
+  line-height: 1.6;
+}

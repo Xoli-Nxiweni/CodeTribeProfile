@@ -1,6 +1,7 @@
-import React from "react";
+// import React from "react";
 import { motion } from "framer-motion";
 
+// eslint-disable-next-line react/prop-types
 const Button = ({ children, variant = "default", className = "", ...props }) => (
   <motion.button
     whileHover={{ scale: 1.05 }}

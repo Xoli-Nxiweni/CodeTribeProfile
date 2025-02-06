@@ -6,14 +6,18 @@ const Goals = ({ data }) => {
   return (
     <section id="goals" className="goals-section">
       <div className="goals-container">
-        <div className="goals-header">
-          <Target className="goals-icon" />
-          <h2 className="goals-title">Post-Program Goals</h2>
-        </div>
-        <div className="goals-content">
+        <h2 className="goals-title">🎯 Post-Program Goals</h2>
+        <p className="goals-subtitle">
+          My key objectives and aspirations after completing the program.
+        </p>
+
+        <div className="goals-grid">
           {/* Short-Term Goals */}
-          <div className="goals-block">
-            <h3 className="goals-subtitle">Short-Term Goals</h3>
+          <div className="goals-card">
+            <div className="goals-icon">
+              <Target />
+            </div>
+            <h3 className="goals-heading">Short-Term Goals</h3>
             <ul className="goals-list">
               {data.shortTerm.map((goal, index) => (
                 <li key={index} className="goals-item">
@@ -25,8 +29,11 @@ const Goals = ({ data }) => {
           </div>
 
           {/* Long-Term Goals */}
-          <div className="goals-block">
-            <h3 className="goals-subtitle">Long-Term Goals</h3>
+          <div className="goals-card">
+            <div className="goals-icon">
+              <Target />
+            </div>
+            <h3 className="goals-heading">Long-Term Goals</h3>
             <ul className="goals-list">
               {data.longTerm.map((goal, index) => (
                 <li key={index} className="goals-item">

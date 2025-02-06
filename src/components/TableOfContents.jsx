@@ -1,14 +1,14 @@
-import React from "react";
 import { motion } from "framer-motion";
 import "./styles/TableOfContents.css";
 
+// eslint-disable-next-line react/prop-types
 const TableOfContents = ({ currentPage, setCurrentPage, pages }) => {
   const handleItemClick = (pageId, event) => {
-    event.preventDefault(); // Prevent default browser behavior
+    event.preventDefault(); 
     const section = document.getElementById(pageId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth", block: "start" });
-      setCurrentPage(pageId); // Update current page
+      setCurrentPage(pageId); 
     }
   };
 
@@ -39,7 +39,7 @@ const TableOfContents = ({ currentPage, setCurrentPage, pages }) => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="toc-link"
-                href={`#${page.id}`} // Use href for fallback but prevent default
+                href={`#${page.id}`}
               >
                 {page.label}
               </motion.a>

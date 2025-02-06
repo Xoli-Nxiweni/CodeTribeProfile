@@ -1,13 +1,11 @@
-// components/Resume.js
-// import React from "react";
+import React from "react";
 import "./styles/Resume.css";
 
-// eslint-disable-next-line react/prop-types
 const Resume = ({ data }) => {
-  const resumeLink = data?.resumeLink || process.env.PUBLIC_URL + "/CurriculumVitae.pdf";
+  const resumeLink = "/Resume-Xoli-Nxiweni.pdf"; // Ensure correct file path
 
   return (
-    <section id="resume">
+    <section id="resume" className="resume-section">
       <div className="resume-container">
         <h2 className="resume-title">My Resume</h2>
 
@@ -32,16 +30,14 @@ const Resume = ({ data }) => {
           </a>
         </div>
 
+        {/* PDF Preview - Use embed instead of object */}
         <div className="resume-preview">
-        <object
-  data={`${resumeLink}#toolbar=0&navpanes=0&scrollbar=1`}
-  type="application/pdf"
-  className="resume-iframe"
-  aria-label="Resume preview"
->
-  <p>Your browser does not support PDFs. <a href={resumeLink}>Download the PDF</a> instead.</p>
-</object>
-
+          <embed
+            src={resumeLink}
+            type="application/pdf"
+            width="100%"
+            height="600px"
+          />
         </div>
       </div>
     </section>
