@@ -1,7 +1,8 @@
 // components/Resume.js
-import React from "react";
+// import React from "react";
 import "./styles/Resume.css";
 
+// eslint-disable-next-line react/prop-types
 const Resume = ({ data }) => {
   const resumeLink = data?.resumeLink || process.env.PUBLIC_URL + "/CurriculumVitae.pdf";
 

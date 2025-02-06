@@ -25,7 +25,7 @@ export const projects = {
       techStack: ["React", "Node.js", "MongoDB"],
       features: ["Add employees", "Edit employee details", "Delete employees"],
       challenges: "Handling real-time updates and ensuring data consistency.",
-      links: { github: "https://github.com/project1", demo: "https://demo.com/project1" },
+      links: { github: "https://github.com/Xoli-Nxiweni/Employee-Registration-App", demo: "https://github.com/Xoli-Nxiweni/Employee-Registration-App" },
       image: "https://via.placeholder.com/400x250",
       feedback: {
         score: "82.9%",
@@ -38,7 +38,7 @@ export const projects = {
       techStack: ["React", "Firebase"],
       features: ["Search recipes", "Save favorites", "User authentication"],
       challenges: "Implementing real-time database updates and user authentication.",
-      links: { github: "https://github.com/project2", demo: "https://demo.com/project2" },
+      links: { github: "https://github.com/Xoli-Nxiweni/RecipeSystem", demo: "https://github.com/Xoli-Nxiweni/RecipeSystem" },
       image: "https://via.placeholder.com/400x250",
       feedback: {
         score: "86%",
@@ -51,7 +51,7 @@ export const projects = {
       techStack: ["Node.js", "Express", "MongoDB"],
       features: ["RESTful API", "Authentication", "Error handling"],
       challenges: "Implementing secure authentication and proper error handling",
-      links: { github: "https://github.com/node-server", demo: "https://demo.com/node-server" },
+      links: { github: "", demo: "" },
       image: "https://via.placeholder.com/400x250",
       feedback: {
         score: "93.5%",
@@ -64,7 +64,7 @@ export const projects = {
       techStack: ["React", "Node.js", "MongoDB"],
       features: ["Multiple quiz categories", "Score tracking", "Timer functionality"],
       challenges: "Implementing timer and score calculation logic",
-      links: { github: "https://github.com/quiz-app", demo: "https://demo.com/quiz" },
+      links: { github: "https://github.com/Xoli-Nxiweni/Node_Quiz", demo: "https://demo.com/quiz" },
       image: "https://via.placeholder.com/400x250",
       feedback: {
         score: "97%",
@@ -90,7 +90,7 @@ export const projects = {
       techStack: ["React", "Node.js", "MongoDB"],
       features: ["Book cataloging", "Search functionality", "Categories"],
       challenges: "Implementing search and filter functionality",
-      links: { github: "https://github.com/book-directory", demo: "https://demo.com/books" },
+      links: { github: "https://github.com/Xoli-Nxiweni/Node_BookDirectory", demo: "https://github.com/Xoli-Nxiweni/Node_BookDirectory" },
       image: "https://via.placeholder.com/400x250",
       feedback: {
         score: "87.65%",
@@ -103,7 +103,7 @@ export const projects = {
       techStack: ["React", "JavaScript"],
       features: ["Multiple difficulty levels", "Score tracking", "Animations"],
       challenges: "Implementing game logic and animations",
-      links: { github: "https://github.com/card-game", demo: "https://demo.com/card-game" },
+      links: { github: "https://github.com/Xoli-Nxiweni/NodeCardGame", demo: "https://github.com/Xoli-Nxiweni/NodeCardGame" },
       image: "https://via.placeholder.com/400x250",
       feedback: {
         score: "91.2%",
@@ -116,7 +116,7 @@ export const projects = {
       techStack: ["Node.js", "Express", "AWS/Heroku"],
       features: ["Automated deployment", "Environment configuration", "Monitoring"],
       challenges: "Setting up proper deployment pipelines",
-      links: { github: "https://github.com/node-hosting", demo: "https://demo.com/node-hosting" },
+      links: { github: "https://github.com/Xoli-Nxiweni/NodeHosting", demo: "https://github.com/Xoli-Nxiweni/NodeHosting" },
       image: "https://via.placeholder.com/400x250",
       feedback: {
         score: "97%",
@@ -147,7 +147,7 @@ export const skills = [
 export const assessments = [
   {
     name: "Hotel App",
-    gitLink: "https://github.com/hotel-app",
+    gitLink: "https://github.com/Xoli-Nxiweni/HotelAppWithRedux",
     dateCompleted: "2024-12-25",
     score: "76.5%",
     notes: "Toggling between favorites, haven't implemented the email on the CMS. The ratings are not working fine.",
